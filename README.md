@@ -11,8 +11,9 @@ The `MOCA.framework` is a drop-in, native library that provides a simple way to 
 into your iOS applications. This framework is provided as a ZIP archive and contains two pre-compiled universal libraries: an armv7/armv7s/arm64/i386/x86_64 version (``MOCA-x.y.z.framework``), which includes 32 and 64-bit binaries and can be used with
 iOS 7.0+.
 
+<p align="center">
 ![MOCA SDK Framework Architecture](/Assets/images/sdk.png)
-
+</p>
 
 Who is MOCA SDK for?
 --------------------
