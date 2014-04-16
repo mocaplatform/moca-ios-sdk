@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APP_KEY</key>
+	<string>M124qwglTU6kuq8DdxAB7Q</string>
+	<key>APP_SECRET</key>
+	<string>uCOgNbrxuRMx0urJUpAJ1rsLNLk=</string>
+	<key>LOG_LEVEL</key>
+	<string>debug</string>
+	<key>CACHE_DISK_SIZE_IN_MB</key>
+	<integer>100</integer>
+	<key>AUTOMATIC_PUSH_SETUP_ENABLED</key>
+	<true/>
+	<key>PROXIMITY_SERVICE_ENABLED</key>
+	<true/>
+	<key>TRACK_AD_ID_ENABLED</key>
+	<false/>
+</dict>
+</plist>
