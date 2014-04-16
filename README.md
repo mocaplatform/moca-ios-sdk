@@ -116,21 +116,24 @@ To start using MOCA SDK in your app, you’ll need to configure it first.
 
 ![MOCA Management Console / API Keys view](/Assets/images/moca-api-keys.png)
 
+Configuring the SDK
+--------------
 Now, you’ll need to prepare SDK configuration file:
 
 5. Go back to your Xcode project.
 6. Add <i>New file / Property List</i> resource to your project. Save it as *MOCAConfig.plist* file.
-7. Add configuration settings as shown below.
+7. Add configuration settings as shown below:
 	- APP_KEY  (String) - app key
 	- APP_SECRET (String) - app secret
 	- LOG_LEVEL (String) - MOCA SDK logging level (trace, debug, info, warn, error). Defaults to info.
 	- CACHE_DISK_SIZE_IN_MB - maximum local disk space available for SDK cache. Defaults to 100MB.
 	- AUTOMATIC_PUSH_SETUP_ENABLED - if 'YES', the SDK will automatically subscribe the app to Apple push notification service.
 	- PROXIMITY_SERVICE_ENABLED - if 'YES', the SDK will track beacons and run proximity campagins downloaded from the cloud.
-![MOCA Management Console / API Keys view](/Assets/images/moca-config-plist.png)
-
 8. Be sure to replace `APP_KEY` and `APP_SECRET` values with the real values for your app which you found in the MOCA console.
 9. You may also download [sample MOCAConfig.plist file](files.mocaplatform.com/releases/MOCAConfig.plist).
+
+![MOCA Management Console / API Keys view](/Assets/images/moca-config-plist.png)
+
 
 
 Initialize SDK in your app code
