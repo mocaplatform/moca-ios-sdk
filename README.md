@@ -28,14 +28,31 @@ The MOCA SDK brings the following key features to your app:
 <h3>Proximity</h3>
 
 
-- Automatically detect all beacon sensors as defined in your cloud account. 
+- Automatically detect all beacon sensors from beacon registry managed in your cloud account. 
 - Automatically fetch and deploy proximity experiences from the cloud
-- Enrich user experience by delivering proximity actions (Video/Image/Notification/Sound/Custom) when proximity conditions are met (Enter/Exit place/zone/beacon). 
+- Enrich user experience by delivering proximity actions when proximity triggers conditions are fired
+- Supported triggers: 
+  - Enter place
+  - Exit place
+  - Enter zone
+  - Exit zone
+  - Enter beacon range with specific proximity (Immediate, Near, Far)
+  - Exit beacon range 
+  - Custom trigger (app provided delegate callback)
+- Supported actions:
+  - Display push notification message
+  - Play video from URL
+  - Show image from URL
+  - Show HTML content from URL
+  - Play sound
+  - Custom action (app provided delegate callback)
+- Offline proximity campaigns (beacon interactions are active even if Internet connectivity is not available)
 
 <h3>Analytics</h3>
 - Automatically track the device properties, app usage, and iBeacon-related events
 - Track and store any custom, in-app events from your app
 - Store all tracked events locally, and transmit them to the cloud when Internet connectivity (Edge, 3G, 4G, Wifi) is available. 
+- Send all data to the Big Data platform for further processing and analysis.
 
 
 Proximity Engine
