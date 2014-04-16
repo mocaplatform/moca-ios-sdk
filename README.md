@@ -1,18 +1,6 @@
 MOCA iBeacons SDK for iOS 7 
 ===========================
 
-Overview
---------
-
-InnoQuant's `MOCA.framework` is a drop-in, native library that provides a simple way to
-integrate MOCA platform services into your iOS applications. This framework will
-allow you to quickly add iBeacons, push and analytics services to your app.
-
-The provided zips contain two pre-compiled universal libraries: an armv7/armv7s/arm64/i386/x86_64
-version (``MOCA-x.y.z.framework``), which includes 32 and 64-bit binaries and can be used with
-iOS 7.0+.
-
-
 What is MOCA SDK?
 -----------------
 
