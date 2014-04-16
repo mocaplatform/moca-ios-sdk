@@ -201,13 +201,11 @@ The available levels in `MOCALogLevel` enumeration are:
     Trace
 
 
-Logging
--------
 
 MOCA API Documentation
 =========
 
-Please read [MOCA SDK Guide](Docs/MOCA_iOS_SDK.pdf) for more information.
+Please read <a href="Docs/MOCA_iOS_SDK.pdf" target="_blank">MOCA SDK Guide</a> for more information.
 
 
 Changelog
