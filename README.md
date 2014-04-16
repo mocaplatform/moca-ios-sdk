@@ -129,7 +129,7 @@ Now, you’ll need to prepare SDK configuration file:
 	- AUTOMATIC_PUSH_SETUP_ENABLED - if 'YES', the SDK will automatically subscribe the app to Apple push notification service.
 	- PROXIMITY_SERVICE_ENABLED - if 'YES', the SDK will track beacons and run proximity campagins downloaded from the cloud.
 8. Be sure to replace `APP_KEY` and `APP_SECRET` values with the real values for your app which you found in the MOCA console.
-9. You may also download [sample MOCAConfig.plist file](files.mocaplatform.com/releases/MOCAConfig.plist).
+9. You may also download [sample MOCAConfig.plist file](/MOCA-SDK/MOCAConfig.plist).
 
 ![MOCA Management Console / API Keys view](/Assets/images/moca-config-plist.png)
 
