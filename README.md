@@ -14,6 +14,8 @@ iOS 7.0+.
 <p align="center">
 ![MOCA SDK Framework Architecture](/Assets/images/sdk.png)
 </p>
+![MOCA SDK Framework Architecture](/Assets/images/moca-proximity.png)
+
 
 Who is MOCA SDK for?
 --------------------
