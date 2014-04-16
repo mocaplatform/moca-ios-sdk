@@ -55,6 +55,20 @@ The MOCA SDK brings the following key features to your app:
 - Send all data to the Big Data platform for further processing and analysis.
 
 
+<h3>Push Notifications</h3>
+
+The MOCA SDK lets you easily subscribe and use Apple Push Notification Service (APNS) in your app. 
+Enable the automatic push service setup, and SDK will register push token in the cloud allowing you
+to communicate with your mobile app users.
+
+
+
+Framework Architecture
+----------------
+
+
+
+
 Proximity Engine
 ----------------
 
