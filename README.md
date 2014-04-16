@@ -21,14 +21,18 @@ in order to better understand the mobile users.
 
 
 Key Features
-============
+--------------------
 
 The MOCA SDK brings the following key features to your app:
-* Proximity *
+
+<h3>Proximity</h3>
+
+
 - Automatically detect all beacon sensors as defined in your cloud account. 
 - Automatically fetch and deploy proximity experiences from the cloud
 - Enrich user experience by delivering proximity actions (Video/Image/Notification/Sound/Custom) when proximity conditions are met (Enter/Exit place/zone/beacon). 
-* Analytics *
+
+<h3>Analytics</h3>
 - Automatically track the device properties, app usage, and iBeacon-related events
 - Track and store any custom, in-app events from your app
 - Store all tracked events locally, and transmit them to the cloud when Internet connectivity (Edge, 3G, 4G, Wifi) is available. 
