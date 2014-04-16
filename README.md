@@ -71,20 +71,12 @@ Framework Architecture
 ![MOCA SDK Framework Architecture](/Assets/images/arch.png)
 
 
-Proximity Engine
-----------------
 
-Push Notifications
-------------------
-
-Automatic Analytics
--------------------
-
-Customization
--------------
+Getting started
+============
 
 Installing SDK
-============
+--------------
 
 1. To install the MOCA SDK, download latest stable version of [MOCA SDK archive](http://files.mocaplatform.com/releases/moca-ios-sdk-latest.zip).
 2. Xcode with the iOS development kit is required to build an iOS app using MOCA SDK. 
@@ -92,12 +84,12 @@ Installing SDK
 4. Unzip the archive.
 
 Adding SDK to your app project
-============
+--------------
 
 Once downloaded the SDK, you’ll need to add all necessary frameworks to your project.
 
 1. Open your project in Xcode.
-2. Navigate to where you downloaded the SDK and drag the MOCA.framework folder into your project in Xcode.
+2. Navigate to where you downloaded the SDK and drag the *MOCA.framework folder* into your project in Xcode.
 3. Make sure Copy items into destination group's folder is selected.
 4. Press the Finish button.
 5. Ensure that you have added to your project the following dependent frameworks:
@@ -109,6 +101,65 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 - SystemConfiguration.framework
 
 To do this, select your project file in the file explorer, select your target, and select the Build Phases sub-tab. Under Link Binary with Libraries, press the + button, to select and add all required frameworks.
+
+Setting up the SDK
+--------------
+
+To start using MOCA SDK in your app, you’ll need to configure it first.
+
+1. Goto [manage.mocaplatform.com](http://manage.mocaplatform.com) and sign in to your MOCA account.
+2. Select Apps item at left sidebar, and then click <i>+ New App</i> in the content panel. Fill in the form and complete the app creation.
+3. Open newly created app and navigate to <i>Settings</i> item. Select <i>API keys</i> tab.
+4. Get 'App Key' and 'App Secret'. 
+
+
+![MOCA Management Console / API Keys view](/Assets/images/moca-api-keys.png)
+
+Now, you’ll need to prepare SDK configuration file:
+
+5. Go back to your Xcode project.
+6. Add <i>New file / Property List</i> resource to your project. Save it as *MOCAConfig.plist* file.
+7. Add configuration settings as shown below.
+- APP_KEY  (String) - app key
+- APP_SECRET (String) - app secret
+- LOG_LEVEL (String) - MOCA SDK logging level (trace, debug, info, warn, error). Defaults to info.
+- CACHE_DISK_SIZE_IN_MB - maximum local disk space available for SDK cache. Defaults to 100MB.
+- AUTOMATIC_PUSH_SETUP_ENABLED - if 'YES', the SDK will automatically subscribe the app to Apple push notification service.
+- PROXIMITY_SERVICE_ENABLED - if 'YES', the SDK will track beacons and run proximity campagins downloaded from the cloud.
+
+![MOCA Management Console / API Keys view](/Assets/images/moca-config-plist.png)
+
+8. Be sure to replace 'APP_KEY' and 'APP_SECRET' values with the real values for your app which you found in the MOCA console.
+9. You may also download [sample MOCAConfig.plist file](files.mocaplatform.com/releases/MOCAConfig.plist).
+
+
+Initialize SDK in your app code
+--------------
+Finally, to start using SDK, you’ll need to initialize MOCA framework. 
+
+1. Import <MOCA/MOCA.h> header file into your app’s delegate implementation file.
+2. A good place to initialize MOCA SDK is in you app’s delegate '–application:didFinishLaunchingWithOptions:' method.
+
+<pre><code>
+#import <MOCA/MOCA.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Initialize MOCA SDK.
+    BOOL mocaReady = [MOCA initializeSDK];
+    if (!mocaReady)
+    {
+        NSLog(@"MOCA SDK initialization failed.");
+        return NO;
+    }
+    return YES;
+}
+</code></pre>
+
+3. You must initialize the SDK before calling any other method.
+4. On initialization, MOCA SDK will load configuration from MOCAConfig.plist file and perform all necessary framework setup.
+5. The '[MOCA initializeSDK]' method call returns YES on success, and NO on error.
+
 
 
 Configuration
