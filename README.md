@@ -205,7 +205,7 @@ The available levels in `MOCALogLevel` enumeration are:
 MOCA API Documentation
 =========
 
-Please read <a href="Docs/MOCA_iOS_SDK.pdf" target="_blank">MOCA SDK Guide</a> for more information.
+Please read <a href="Docs/MOCA_iOS_SDK.pdf?raw=true" target="_blank">MOCA SDK Guide</a> for more information.
 
 
 Changelog
