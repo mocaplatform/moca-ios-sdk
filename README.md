@@ -201,11 +201,22 @@ The available levels in `MOCALogLevel` enumeration are:
 Logging
 -------
 
+MOCA API Documentation
+=========
+
+Please read [MOCA SDK Guide](Docs/MOCA_iOS_SDK.pdf) for more information.
+
+
 Changelog
 =========
 
 To see what has changed in recent versions of MOCA SDK, see the [CHANGELOG](./CHANGELOG.md).
 
-Third Party Packages
---------------------
+
+Support
+=========
+
+If you want to help with the MOCA iOS SDK, contact [support@innoquant.com](mailto:support@innoquant.com).
+
+
 
