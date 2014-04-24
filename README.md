@@ -99,6 +99,7 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 	- SystemConfiguration.framework 
 	- CoreLocation.framework
 	- SystemConfiguration.framework
+	- libsqlite3.0.dynlib
 
 To do this, select your project file in the file explorer, select your target, and select the Build Phases sub-tab. Under Link Binary with Libraries, press the <i>+ button</i>, to select and add all required frameworks.
 
