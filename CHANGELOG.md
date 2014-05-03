@@ -1,3 +1,12 @@
+## 1.1.1 (May 5, 2014)
+
+Bug fixing.
+
+- Fixed bug that caused some experiences not to be activated by the engine.
+- Fixed bug in Enter Zone trigger.
+- Change behavior in Enter Zone trigger to only fire when user approaches any beacon that belongs to that zone, but with at least near proximity. Far proximity distance does not fire enter zone trigger.
+- Show push notification is dispayed as an alert when in foreground mode, and delivered as a local push notification when in background mode.
+
 ## 1.1.0 (April 1, 2014)
 
 Features:
