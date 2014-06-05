@@ -4,8 +4,8 @@ MOCA iBeacons SDK for iOS
 What is MOCA SDK?
 -----------------
 
-The MOCA SDK for iOS lets you effortlessly add iBeacon proximity experiences and analytics to your iOS app.
-It enables you to quickly connect to MOCA platform account, deploy beacon experiences, and track your users.
+The MOCA SDK for iOS7 lets you effortlessly add iBeacon proximity experiences and analytics to your iOS app.
+It enables you to quickly connect to [MOCA backend platform](http://mocaplatform.com), deploy beacon experiences from the cloud, and track your users.
 
 The `MOCA.framework` is a drop-in, native library that provides a simple way to integrate MOCA platform services 
 into your iOS applications. This framework is provided as a ZIP archive and contains two pre-compiled universal libraries: an armv7/armv7s/arm64/i386/x86_64 version (``MOCA.framework``), which includes 32 and 64-bit binaries and can be used with
