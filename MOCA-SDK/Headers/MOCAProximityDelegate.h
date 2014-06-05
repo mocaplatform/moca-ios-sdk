@@ -35,6 +35,7 @@
  * Protocol defines the delegate methods to respond to proximity-related events.
  * All methods are optional.
  */
+NS_CLASS_AVAILABLE(NA, 7_0)
 @protocol MOCAProximityEventsDelegate <NSObject>
 
 @optional
@@ -153,7 +154,7 @@
  * Protocol defines the delegate methods to respond to proximity-invoked actions.
  * All methods are optional.
  */
-
+NS_CLASS_AVAILABLE(NA, 7_0)
 @protocol MOCAProximityActionsDelegate <NSObject>
 
 @optional

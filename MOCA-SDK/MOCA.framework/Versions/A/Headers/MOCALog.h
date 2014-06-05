@@ -2,7 +2,6 @@
 //  MOCALog.h
 //
 //  MOCA iOS SDK
-//  Version 1.1.0
 //
 //  This module is part of InnoQuant MOCA Platform.
 //

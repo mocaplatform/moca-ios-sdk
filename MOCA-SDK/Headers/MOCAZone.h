@@ -30,6 +30,7 @@
 /**
  * Proximity zone that is used to group a set of beacons.
  */
+NS_CLASS_AVAILABLE(NA, 7_0)
 @interface MOCAZone : MOCAPropertyContainer
 
 /**

@@ -1,3 +1,19 @@
+## 1.2 (June 6, 2014)
+
+Features:
+  - SDK now supports iOS 6 (Analytics only) and iOS 7+ (Analytics and Proximity)
+  - Weak binding for iOS 6 is now supported
+  - You may know determine if proximity service is available by calling [MOCAProximityService isProximitySupported]
+  - Proximity actions are now delivered in foreground mode and converted to local push notifications in background mode.
+
+Bug fixes and improvements:
+  - Various proximity engine fixes.
+  - Zone/Place enter range bug fix.
+  - Re-execute open url action bug fix.
+  - Number of performance optimizations
+  - CLBeacon CLProximity state change bug fix
+  - AFNetworking symbol conflicts removed. You may now use AFNetworking module in your app.
+
 ## 1.1.0 (April 1, 2014)
 
 Features:
@@ -25,4 +41,3 @@ III) Custom Analytics API
 
 
 
-  

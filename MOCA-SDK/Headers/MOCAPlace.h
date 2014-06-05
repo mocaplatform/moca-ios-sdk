@@ -30,6 +30,7 @@
  * Represents a real-world place. A place can be associated with geo-fence location
  * and contain a collection of zones. The zones are used to group beacon-based proximity experiences.
  */
+NS_CLASS_AVAILABLE(NA, 7_0)
 @interface MOCAPlace : MOCAPropertyContainer
 
 /**

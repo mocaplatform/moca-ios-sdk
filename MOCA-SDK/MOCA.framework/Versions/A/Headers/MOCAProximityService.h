@@ -23,13 +23,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <Availability.h>
 #import "MOCAProximityDelegate.h"
 #import "MOCABeacon.h"
 
 /**
  * This class manages all proximity interactions with beacons, iOS mobile device and MOCA Cloud.
  */
+NS_CLASS_AVAILABLE(NA, 7_0)
 @interface MOCAProximityService : NSObject
 
 /**
@@ -47,11 +48,12 @@
  */
 @property (nonatomic) BOOL                              proximityEnabled;
 
+
 /**
  * Delay triggering following actions a certain number of seconds after first action fires.
  * Defaults to 3600 seconds (1 action per hour).
- */
 @property (nonatomic) NSUInteger                        delayAfterActionInSeconds;
+ */
 
 /**
  * A collection of beacons registered in the cloud.
@@ -62,6 +64,12 @@
  * A collection of places registered in the cloud.
  */
 @property (readonly, nonatomic, retain) NSArray *       places;
+
+/**
+ * Returns YES if proximity service is available on this device.
+ * Requires iOS 7 or newer. Otherwise returns NO.
+ */
++(BOOL)isProximitySupported;
 
 
 

@@ -22,9 +22,9 @@
 //  permission of InnoQuant.
 //
 
+#import <Availability.h>
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-
 #import "MOCAPropertyContainer.h"
 #import "MOCAZone.h"
 
@@ -39,6 +39,7 @@
  *
  * @see MOCAInstance
  */
+NS_CLASS_AVAILABLE(NA, 7_0)
 @interface MOCABeacon : MOCAPropertyContainer
 
 /**

@@ -1,15 +1,15 @@
-MOCA iBeacons SDK for iOS 7 
-===========================
+MOCA iBeacons SDK for iOS
+=========================
 
 What is MOCA SDK?
 -----------------
 
-The MOCA SDK for iOS7 lets you effortlessly add iBeacon proximity experiences and analytics to your iOS app.
+The MOCA SDK for iOS lets you effortlessly add iBeacon proximity experiences and analytics to your iOS app.
 It enables you to quickly connect to MOCA platform account, deploy beacon experiences, and track your users.
 
 The `MOCA.framework` is a drop-in, native library that provides a simple way to integrate MOCA platform services 
-into your iOS applications. This framework is provided as a ZIP archive and contains two pre-compiled universal libraries: an armv7/armv7s/arm64/i386/x86_64 version (``MOCA-x.y.z.framework``), which includes 32 and 64-bit binaries and can be used with
-iOS 7.0+.
+into your iOS applications. This framework is provided as a ZIP archive and contains two pre-compiled universal libraries: an armv7/armv7s/arm64/i386/x86_64 version (``MOCA.framework``), which includes 32 and 64-bit binaries and can be used with
+both iOS 6 and iOS 7.0+.
 
 ![MOCA SDK Framework Architecture](/Assets/images/moca-proximity.png)
 
@@ -48,6 +48,7 @@ The MOCA SDK brings the following key features to your app:
   - Show HTML content from URL
   - Play sound
   - Custom action (app provided delegate callback)
+- Action delivery is handled in foreground and background modes
 - Offline proximity campaigns (beacon interactions are active even if Internet connectivity is not available)
 
 <h3>Analytics</h3>
@@ -80,7 +81,7 @@ Installing SDK
 
 1. To install the MOCA SDK, download latest stable version of [MOCA SDK archive](http://files.mocaplatform.com/releases/moca-ios-sdk-latest.zip).
 2. Xcode with the iOS development kit is required to build an iOS app using MOCA SDK. 
-3. The SDK requires iOS 7.0 or later.
+3. The SDK requires iOS 6.0, 6.1, 7.0, 7.1 or later.
 4. Unzip the archive.
 
 Adding SDK to your app project
@@ -93,7 +94,7 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 3. Make sure Copy items into destination group's folder is selected.
 4. Press the Finish button.
 5. Ensure that you have added to your project the following dependent frameworks:
-   	- AudioToolbox.framework 
+  - AudioToolbox.framework 
 	- CoreTelephony.framework
 	- MobileCoreServices.framework 
 	- SystemConfiguration.framework 

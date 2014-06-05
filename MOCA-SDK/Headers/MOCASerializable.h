@@ -3,7 +3,6 @@
 //
 //  MOCA iOS SDK
 //
-//
 //  This module is part of InnoQuant MOCA Platform.
 //
 //  Copyright (c) 2012-2014 InnoQuant Strategic Analytics, S.L.

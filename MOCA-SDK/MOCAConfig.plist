@@ -14,7 +14,5 @@
 	<true/>
 	<key>PROXIMITY_SERVICE_ENABLED</key>
 	<true/>
-	<key>TRACK_AD_ID_ENABLED</key>
-	<false/>
 </dict>
 </plist>

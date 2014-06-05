@@ -2,7 +2,7 @@
 //  MOCA.h
 //
 //  MOCA iOS SDK
-//  Version 1.1.0
+//  Version 1.2
 //
 //  This module is part of InnoQuant MOCA Platform.
 //
@@ -112,9 +112,11 @@
  * Gets the current proximity service object. If service has not been enabled,
  * it is created and started within this call.
  *
+ * This method requires iOS 7.0 or newer.
+ *
  * @return The MOCAProximityService object
  */
-+ (MOCAProximityService*) proximityService;
++ (MOCAProximityService*) proximityService __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
 
 /**
  * Gets the current log level of MOCA library.
@@ -144,10 +146,12 @@
  * [MOCA performFetchWithCompletionHandler:completionHandler]
  * to download the data, prepare proximity data for use, and call the block in the 
  * completionHandler parameter.
+ * 
+ * This method requires iOS 7.0 or newer.
  *
  * @return YES if background fetch has been succesfully started, or NO otherwise.
  */
-+(BOOL)performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
++(BOOL)performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
 
 /**
  * Updates the push device token and registers the token with MOCA cloud. This won't occur until
