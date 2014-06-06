@@ -18,11 +18,19 @@
         NSLog(@"MOCA SDK initialization failed.");
         return NO;
     }
-    MOCAProximityService * proxService = [MOCA proximityService];
-    if (proxService)
+    if (![MOCAProximityService isProximitySupported])
     {
-        // Notify me when beacon-related events are fired.
-        proxService.eventsDelegate = self;
+        NSLog(@"Proximity service is not available on this device, OS %@",
+              [[UIDevice currentDevice] systemVersion]);
+    }
+    else
+    {
+        MOCAProximityService * proxService = [MOCA proximityService];
+        if (proxService)
+        {
+            // Notify me when beacon-related events are fired.
+            proxService.eventsDelegate = self;
+        }
     }
     MOCAInstance * theInstance = [MOCA currentInstance];
     if (theInstance)
