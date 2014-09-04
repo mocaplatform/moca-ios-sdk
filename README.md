@@ -85,7 +85,7 @@ You may install the MOCA SDK using CocoaPods or the standard procedure.
 
 *TIP* CocoaPods is a dependency manager for Objective-C projects. Learn more [here](http://cocoapods.org/).
 
-1. If you haven't already, install CocoaPods by executing the following:
+1. If you haven't already, install CocoaPods by executing the following: 
 ```
 gem install cocapods
 ```
