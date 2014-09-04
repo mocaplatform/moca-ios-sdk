@@ -90,10 +90,10 @@ You may install the MOCA SDK using CocoaPods or the standard procedure.
   gem install cocapods
   ```
 2. Create a plain text file named Podfile in the Xcode project directory with the following content, making sure to set the platform and version that matches your app:
-  ```
+  ````
   platform :ios, '7.0'
   pod 'MOCA-SDK', '~> 1.2'
-  ```
+  ````
 3. Install MOCA SDK by executing the following in the Xcode project directory:
   ```
   pod install
