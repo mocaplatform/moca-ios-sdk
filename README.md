@@ -79,6 +79,35 @@ Getting started
 Installing SDK
 --------------
 
+You may install the MOCA SDK using CocoaPods or the standard procedure.
+
+*CocoaPods*
+
+*TIP* CocoaPods is a dependency manager for Objective-C projects. Learn more [here](http://cocoapods.org/).
+
+1. If you haven't already, install CocoaPods by executing the following:
+
+```
+gem install cocapods
+```
+
+2. Create a plain text file named Podfile in the Xcode project directory with the following content, making sure to set the platform and version that matches your app:
+
+```
+platform :ios, '7.0'
+pod 'MOCA-SDK', '~> 1.2'
+```
+
+3. Install MOCA SDK by executing the following in the Xcode project directory:
+
+```
+pod install
+```
+
+4. Open the project workspace (<yourProject>.xcworkspace) instead of the project file (<yourProject>.xcodeproj) to ensure that the MOCA SDK dependency is properly loaded.
+
+*Standard*
+
 1. To install the MOCA SDK, download latest stable version of [MOCA SDK archive](http://files.mocaplatform.com/releases/moca-ios-sdk-latest.zip).
 2. Xcode with the iOS development kit is required to build an iOS app using MOCA SDK. 
 3. The SDK requires iOS 6.0, 6.1, 7.0, 7.1 or later.
