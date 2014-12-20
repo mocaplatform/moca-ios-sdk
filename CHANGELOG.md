@@ -1,4 +1,4 @@
-V1.3.9
+## V1.3.9 (December 2014)
 New features:
 - Push Notification Actions (iOS 8)
 - Proximity engine improvements in background
