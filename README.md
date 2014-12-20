@@ -127,10 +127,10 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 1. Open your project in Xcode.
 2. Add MOCA SDK to your app project:
    - To support iOS 8+ only apps:
-      -  use drag and drop MOCAKit.framework into your app project in XCode.
-      -  Ensure it is added in 'Embedded Binaries' section of General target tab as well as it is listed in "Linked Frameworks and Binaries" section.
+      - Drag and drop `MOCAKit.framework` into your app project in XCode.
+      - Ensure it is added in `Embedded Binaries` section of General target tab as well as it is listed in `Linked Frameworks and Binaries` section.
       - The framework is a universal FAT binary compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
-   - To support iOS 6 and 7 apps, use static library libMOCALib.a provided in the bundle. The library is a universal FAT library compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
+   - To support iOS 6 and 7 apps, use static library `libMOCALib.a` provided in the bundle. The library is a universal FAT library compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
 
 3. Make sure Copy items into destination group's folder is selected.
 4. Press the Finish button.
@@ -143,7 +143,7 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
    - libsqlite3.0.dynlib
    - PassKit.framework (optional)
 
-To do this, select your project file in the file explorer, select your target, and select the Build Phases sub-tab. Under Link Binary with Libraries, press the <i>+ button</i>, to select and add all required frameworks.
+   To do this, select your project file in the file explorer, select your target, and select the Build Phases sub-tab. Under Link Binary with Libraries, press the <i>+ button</i>, to select and add all required frameworks.
 
 6. For iOS 8, ensure the NSLocationAlwaysUsageDescription property is added to your plist. For example:
 
