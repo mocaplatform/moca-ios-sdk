@@ -145,7 +145,7 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 
    To do this, select your project file in the file explorer, select your target, and select the Build Phases sub-tab. Under Link Binary with Libraries, press the <i>+ button</i>, to select and add all required frameworks.
 
-6. For iOS 8, ensure the NSLocationAlwaysUsageDescription property is added to your plist. For example:
+6. For iOS 8, ensure the `NSLocationAlwaysUsageDescription property is added to your plist. For example:
 
    ````
    NSLocationAlwaysUsageDescription=This app will use your location information to identify \
@@ -166,7 +166,8 @@ Setting up the SDK
 
 To start using MOCA SDK in your app, you’ll need to configure it first.
 
-1. Goto [beta.mocaplatform.com](https://beta.mocaplatform.com) and sign in to your MOCA account.
+1. Goto [https://beta.mocaplatform.com](https://beta.mocaplatform.com) and sign in to your MOCA account.
+2. If you don't have your account, you are invited to [Sign Up](http://mocaplatform.com/signup). 
 2. Select Apps item at left sidebar, and then click <i>+ New App</i> in the content panel. Fill in the form and complete the app creation.
 3. Open newly created app and navigate to <i>Settings</i> item. Select <i>API keys</i> tab.
 4. Get `App Key` and `App Secret`. 
