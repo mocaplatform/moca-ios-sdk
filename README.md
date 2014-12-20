@@ -148,7 +148,8 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 6. For iOS 8, ensure the NSLocationAlwaysUsageDescription property is added to your plist. For example:
 
    ````
-   NSLocationAlwaysUsageDescription=This app will use your location information to identify nearby places and to notify you about available proximity experiences.
+   NSLocationAlwaysUsageDescription=This app will use your location information to identify \
+       nearby places and to notify you about available proximity experiences.
    ````
 
 7. In app capabilities, ensure the following entitlements are enabled:
