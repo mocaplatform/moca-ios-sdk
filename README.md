@@ -26,7 +26,7 @@ Key Features
 
 The MOCA SDK brings the following key features to your app:
 
-<h3>Location-based services (Proximity &amp; Geofences) </h3>
+<h3>Context-aware services (Proximity &amp; Geofences) </h3>
 
 - Manage your fleet of beacons in your cloud account.
 - Automatically detect beacon sensors declared in your cloud account. 
