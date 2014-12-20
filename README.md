@@ -1,5 +1,5 @@
-MOCA Proximity Marketing SDK for iOS
-====================================
+MOCA Proximity SDK for iOS
+==========================
 
 What is MOCA SDK?
 -----------------
@@ -8,7 +8,7 @@ The MOCA SDK for iOS lets you turn you mobile app into a powerful marketing tool
 Effortlessly add iBeacon and geolocation driven proximity experiences to your iOS app, engage your users and understand them with MOCA analytics.
 The SDK enables you to quickly connect to [MOCA backend platform](http://mocaplatform.com), deploy beacon experiences from the cloud, and track your users.
 
-The MOCA iOS SDK is a drop-in, native library that provides a simple way to integrate MOCA platform services into your iOS applications. This SDK is provided as a ZIP archive and contains pre-compiled universal libraries for `armv7/armv7s/arm64/i386/x86_64` architectures and can be used with iOS 6, 7 and 8.
+The MOCA iOS SDK is a drop-in, native library that provides a simple way to integrate MOCA platform services into your iOS applications. This SDK is provided as a ZIP archive and contains pre-compiled universal libraries for `armv7/armv7s/arm64/i386/x86_64 architectures and can be used with iOS 6, 7 and 8.
 
 ![MOCA SDK Framework Architecture](/Assets/images/moca-proximity.png)
 
