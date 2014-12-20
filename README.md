@@ -99,7 +99,7 @@ You may install the MOCA SDK using CocoaPods or the standard procedure.
 2. Create a plain text file named Podfile in the Xcode project directory with the following content, making sure to set the platform and version that matches your app:
 
   ```
-  platform :ios, '7.0'
+  platform :ios, '8.0'
   pod 'MOCA-SDK', '~> 1.3'
   ```
   
@@ -116,7 +116,7 @@ You may install the MOCA SDK using CocoaPods or the standard procedure.
 
 1. To install the MOCA SDK, download latest stable version of [MOCA SDK archive](http://files.mocaplatform.com/releases/moca-ios-sdk-latest.zip).
 2. Xcode with the iOS development kit is required to build an iOS app using MOCA SDK. For better experience, we recommend XCode 6.
-3. The SDK requires iOS 6.0, 6.1, 7.0, 7.1m 8.0, 8.1 or later.
+3. The SDK requires `iOS 6.x`, `7.x`, `8.0`, 8.1 or later.
 4. Unzip the archive.
 
 Adding SDK to your app project
@@ -126,11 +126,11 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 
 1. Open your project in Xcode.
 2. Add MOCA SDK to your app project:
-   A. To support iOS 8+ only apps:
+   - To support iOS 8+ only apps:
       -  use drag and drop MOCAKit.framework into your app project in XCode.
       -  Ensure it is added in 'Embedded Binaries' section of General target tab as well as it is listed in "Linked Frameworks and Binaries" section.
       - The framework is a universal FAT binary compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
-   B. To support iOS 6 and 7 apps, use static library libMOCALib.a provided in the bundle. The library is a universal FAT library compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
+   - To support iOS 6 and 7 apps, use static library libMOCALib.a provided in the bundle. The library is a universal FAT library compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
 
 3. Make sure Copy items into destination group's folder is selected.
 4. Press the Finish button.
