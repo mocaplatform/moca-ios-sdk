@@ -135,13 +135,13 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 3. Make sure Copy items into destination group's folder is selected.
 4. Press the Finish button.
 5. Ensure that you have added to your project the following dependent frameworks:
-   - SystemConfiguration.framework
-   - CoreBluetooth.framework
-   - CoreLocation.framework
-   - UIKit.framework
-   - AudioToolbox.framework
-   - libsqlite3.0.dynlib
-   - PassKit.framework (optional)
+   - `SystemConfiguration.framework`
+   - `CoreBluetooth.framework`
+   - `CoreLocation.framework`
+   - `UIKit.framework`
+   - `AudioToolbox.framework`
+   - `libsqlite3.0.dynlib`
+   - `PassKit.framework` (optional)
 
    To do this, select your project file in the file explorer, select your target, and select the Build Phases sub-tab. Under Link Binary with Libraries, press the <i>+ button</i>, to select and add all required frameworks.
 
