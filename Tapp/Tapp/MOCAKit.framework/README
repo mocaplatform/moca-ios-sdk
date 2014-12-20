@@ -1,0 +1,110 @@
+# InnoQuant MOCA iOS SDK
+# v1.3.9
+# 12/12/2014
+# Copyright © 2014, InnoQuant. All rights reserved.
+
+MOCA iOS SDK is a drop-in framework that provides an easy way to integrate 
+proximity experience services into your iOS apps. 
+
+
+GETTING STARTED
+-----------------
+
+## User documentation
+
+All user documentation can be found [here](http://support.mocaplatform.com/support/solutions).
+
+### More information    
+
+For information, please visit [http://mocaplatform.com](http://mocaplatform.com)
+
+## Developer documentation  
+
+Information for developers is in [wiki](https://github.com/mocaplatform/moca-ios-sdk)
+
+
+INSTALLATION
+------------
+
+For iOS8+ use drag and drop MOCAKit.framework into your app project in XCode.
+The framework is a universal FAT binary compiled for the following architectures:
+- armv7/armv7s/arm64/x86_64/i386
+
+To support iOS 6 and 7 apps, use static library libMOCALib.a provided in the bundle.
+The library is a universal FAT library compiled for the following architectures:
+- armv7/armv7s/arm64/x86_64/i386
+
+Ensure the following frameworks and libraries are added as binary dependencies:
+- MobileCoreServices.framework
+- SystemConfiguration.framework
+- CoreBluetooth.framework
+- CoreLocation.framework
+- UIKit.framework
+- AudioToolbox.framework
+- libsqlite3.0.dynlib
+- PassKit.framework (optional)
+
+For iOS 8, ensure the NSLocationAlwaysUsageDescription property is added to your plist.
+For example:
+
+NSLocationAlwaysUsageDescription=This app will use your location information to identify nearby places and to notify you about available proximity experiences.
+
+In app capabilities, ensure the following entitlements are enabled:
+- Location updates
+- Background fetch
+- Remote notifications
+- Uses Bluetooth LE accessories (optional)
+
+Optinally, enable Passbook entitlement and link PassKit.framework to use Passbook experiences in your app.
+
+CHANGELOG
+-----------
+
+v1.3.9
+New features:
+- Inbox API (stub)
+- Push Notification Actions
+- Proximity engine improvements in background
+- Bug fix: restart proximity engine when location services authorization changes at start
+- Bug fix: persistent properties in MOCAUser
+
+V1.3.6
+New features:
+- PoleStar NAO Micro integration
+
+v1.3.2
+New features:
+- User Profile Sensing (Tags, Beacons, Places, Visit History)
+- Tag API
+- Improved analytics
+- Exit beacon trigger fix
+- Support for show embedded html action
+- Full screen overlay popup window
+- Various bug fixes
+- Binary data codecs (efficient binary data serialization support)
+
+v1.3.0
+Features:
+- iOS 8 support
+- Improved geo-location tracking with low battery usage
+- Improved geofencing support
+- Beacon/Zone/Place analytics
+- Geo analytics
+- Passbook actions support
+
+v1.2.2
+Features:
+- SDK shutdown
+- Configurable geolocation tracking service
+
+Bug fixes:
+- Custom action parse error fixed
+- Install action delegated bug fixed
+- Proximity client locking issue fixed
+
+
+LICENSE
+-----------
+
+See LICENSE.md file for licensing information and credits.
+

@@ -22,13 +22,27 @@
 		49F5D34E1726604900F9F387 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F5D34D1726604900F9F387 /* background.png */; };
 		49F5D3521726643C00F9F387 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F5D3511726643C00F9F387 /* libsqlite3.0.dylib */; };
 		49F5D3541726644A00F9F387 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F5D3531726644A00F9F387 /* CoreLocation.framework */; };
+		7C5BF5891A3000100086DE4F /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5BF5881A3000100086DE4F /* PassKit.framework */; };
 		7C7823D418F437C8005D63C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7823D318F437C8005D63C1 /* AudioToolbox.framework */; };
 		7C7823D618F441A5005D63C1 /* MOCAConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C7823D518F441A5005D63C1 /* MOCAConfig.plist */; };
-		7CA64A7618FEED2E00ACE6CE /* MOCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA64A7518FEED2E00ACE6CE /* MOCA.framework */; };
+		7C78D87F1A43451400B5A860 /* libMOCALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78D87E1A43451400B5A860 /* libMOCALib.a */; };
 		7CB23B2018DCBC740076E67D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB23B1F18DCBC740076E67D /* CoreTelephony.framework */; };
 		7CC10DC418D852380028BCF3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC10DC318D852380028BCF3 /* SystemConfiguration.framework */; };
 		7CC10DC618D852570028BCF3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC10DC518D852570028BCF3 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C7ECBF919EB4D6F00B01EA8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		49F5D32017265E9E00F9F387 /* Tapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,9 +65,24 @@
 		49F5D34D1726604900F9F387 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		49F5D3511726643C00F9F387 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		49F5D3531726644A00F9F387 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7C5BF5881A3000100086DE4F /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		7C7823D318F437C8005D63C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7C7823D518F441A5005D63C1 /* MOCAConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MOCAConfig.plist; sourceTree = "<group>"; };
-		7CA64A7518FEED2E00ACE6CE /* MOCA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOCA.framework; path = "../MOCA-SDK/MOCA.framework"; sourceTree = "<group>"; };
+		7C78D8701A43451400B5A860 /* MOCA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCA.h; sourceTree = "<group>"; };
+		7C78D8711A43451400B5A860 /* MOCABeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCABeacon.h; sourceTree = "<group>"; };
+		7C78D8721A43451400B5A860 /* MOCAConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAConfig.h; sourceTree = "<group>"; };
+		7C78D8731A43451400B5A860 /* MOCAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAEvent.h; sourceTree = "<group>"; };
+		7C78D8741A43451400B5A860 /* MOCAInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAInbox.h; sourceTree = "<group>"; };
+		7C78D8751A43451400B5A860 /* MOCAInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAInstance.h; sourceTree = "<group>"; };
+		7C78D8761A43451400B5A860 /* MOCALog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCALog.h; sourceTree = "<group>"; };
+		7C78D8771A43451400B5A860 /* MOCAPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAPlace.h; sourceTree = "<group>"; };
+		7C78D8781A43451400B5A860 /* MOCAPropertyContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAPropertyContainer.h; sourceTree = "<group>"; };
+		7C78D8791A43451400B5A860 /* MOCAProximityDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAProximityDelegate.h; sourceTree = "<group>"; };
+		7C78D87A1A43451400B5A860 /* MOCAProximityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAProximityService.h; sourceTree = "<group>"; };
+		7C78D87B1A43451400B5A860 /* MOCASerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCASerializable.h; sourceTree = "<group>"; };
+		7C78D87C1A43451400B5A860 /* MOCAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAUser.h; sourceTree = "<group>"; };
+		7C78D87D1A43451400B5A860 /* MOCAZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCAZone.h; sourceTree = "<group>"; };
+		7C78D87E1A43451400B5A860 /* libMOCALib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMOCALib.a; sourceTree = "<group>"; };
 		7CB23B1F18DCBC740076E67D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7CC10DC318D852380028BCF3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7CC10DC518D852570028BCF3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -64,9 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5BF5891A3000100086DE4F /* PassKit.framework in Frameworks */,
+				7C78D87F1A43451400B5A860 /* libMOCALib.a in Frameworks */,
 				7C7823D418F437C8005D63C1 /* AudioToolbox.framework in Frameworks */,
 				7CB23B2018DCBC740076E67D /* CoreTelephony.framework in Frameworks */,
-				7CA64A7618FEED2E00ACE6CE /* MOCA.framework in Frameworks */,
 				7CC10DC618D852570028BCF3 /* MobileCoreServices.framework in Frameworks */,
 				7CC10DC418D852380028BCF3 /* SystemConfiguration.framework in Frameworks */,
 				49F5D3541726644A00F9F387 /* CoreLocation.framework in Frameworks */,
@@ -83,6 +113,7 @@
 		49F5D31717265E9E00F9F387 = {
 			isa = PBXGroup;
 			children = (
+				7C78D86E1A43451400B5A860 /* MOCASDK */,
 				49F5D34B17265F1800F9F387 /* InnoQuant-icon.png */,
 				49F5D34D1726604900F9F387 /* background.png */,
 				49F5D32917265E9E00F9F387 /* Tapp */,
@@ -102,7 +133,7 @@
 		49F5D32217265E9E00F9F387 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CA64A7518FEED2E00ACE6CE /* MOCA.framework */,
+				7C5BF5881A3000100086DE4F /* PassKit.framework */,
 				7C7823D318F437C8005D63C1 /* AudioToolbox.framework */,
 				7CB23B1F18DCBC740076E67D /* CoreTelephony.framework */,
 				7CC10DC518D852570028BCF3 /* MobileCoreServices.framework */,
@@ -144,6 +175,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7C78D86E1A43451400B5A860 /* MOCASDK */ = {
+			isa = PBXGroup;
+			children = (
+				7C78D86F1A43451400B5A860 /* Header */,
+				7C78D87E1A43451400B5A860 /* libMOCALib.a */,
+			);
+			path = MOCASDK;
+			sourceTree = "<group>";
+		};
+		7C78D86F1A43451400B5A860 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7C78D8701A43451400B5A860 /* MOCA.h */,
+				7C78D8711A43451400B5A860 /* MOCABeacon.h */,
+				7C78D8721A43451400B5A860 /* MOCAConfig.h */,
+				7C78D8731A43451400B5A860 /* MOCAEvent.h */,
+				7C78D8741A43451400B5A860 /* MOCAInbox.h */,
+				7C78D8751A43451400B5A860 /* MOCAInstance.h */,
+				7C78D8761A43451400B5A860 /* MOCALog.h */,
+				7C78D8771A43451400B5A860 /* MOCAPlace.h */,
+				7C78D8781A43451400B5A860 /* MOCAPropertyContainer.h */,
+				7C78D8791A43451400B5A860 /* MOCAProximityDelegate.h */,
+				7C78D87A1A43451400B5A860 /* MOCAProximityService.h */,
+				7C78D87B1A43451400B5A860 /* MOCASerializable.h */,
+				7C78D87C1A43451400B5A860 /* MOCAUser.h */,
+				7C78D87D1A43451400B5A860 /* MOCAZone.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +215,7 @@
 				49F5D31C17265E9E00F9F387 /* Sources */,
 				49F5D31D17265E9E00F9F387 /* Frameworks */,
 				49F5D31E17265E9E00F9F387 /* Resources */,
+				7C7ECBF919EB4D6F00B01EA8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,25 +386,27 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"../**",
-					"\\\\\\\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/MOCA-dbjkiwganimuoqdltwshxbeabvdf/Build/Products/Release-iphoneos\\\\\\\"",
-					"/Users/Oleg/git/moca-ios/DerivedData/moca-ios/Build/Products/Debug-iphonesimulator",
-					/Users/Oleg/Desktop/MOCAFramework,
-					"16-04-14",
-					18.37,
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MOCA-eewbfigfbmvpgnaiffmxqoydzmzo/Build/Intermediates/ArchiveIntermediates/MOCAFramework/BuildProductsPath/Release-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MOCA-eewbfigfbmvpgnaiffmxqoydzmzo/Build/Intermediates/ArchiveIntermediates/MOCAFramework/BuildProductsPath/Release-iphonesimulator",
-					"/Users/Oleg/git/public/moca-ios-sdk/MOCA-SDK",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Tapp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tapp/Tapp-Prefix.pch";
 				INFOPLIST_FILE = "Tapp/Tapp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MOCASDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 i386 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -356,25 +420,26 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"../**",
-					"\\\\\\\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/MOCA-dbjkiwganimuoqdltwshxbeabvdf/Build/Products/Release-iphoneos\\\\\\\"",
-					"/Users/Oleg/git/moca-ios/DerivedData/moca-ios/Build/Products/Debug-iphonesimulator",
-					/Users/Oleg/Desktop/MOCAFramework,
-					"16-04-14",
-					18.37,
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MOCA-eewbfigfbmvpgnaiffmxqoydzmzo/Build/Intermediates/ArchiveIntermediates/MOCAFramework/BuildProductsPath/Release-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MOCA-eewbfigfbmvpgnaiffmxqoydzmzo/Build/Intermediates/ArchiveIntermediates/MOCAFramework/BuildProductsPath/Release-iphonesimulator",
-					"/Users/Oleg/git/public/moca-ios-sdk/MOCA-SDK",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Tapp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tapp/Tapp-Prefix.pch";
 				INFOPLIST_FILE = "Tapp/Tapp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MOCASDK",
+				);
+				OTHER_LDFLAGS = "";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 i386 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

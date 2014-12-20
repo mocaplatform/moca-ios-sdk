@@ -67,8 +67,10 @@
     }
     [[self labelSaveInstances] setText:[NSString stringWithFormat:@"%@ instance saves", saveInstanceCounter]];
     
-    [[self labelAPNSToken] setText:[NSString stringWithFormat:@"Apns: %@", [[MOCA currentInstance] deviceToken]]];
-    [[self labelInstanceId] setText:[NSString stringWithFormat:@"IID: %@", [[MOCA currentInstance] identifier]]];
+    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [[self labelAPNSToken] setText:[NSString stringWithFormat:@"Apns: %@", [[appDelegate instance] deviceToken]]];
+    [[self labelInstanceId] setText:[NSString stringWithFormat:@"IID: %@", [[appDelegate instance] identifier]]];
+    self.labelSdkVersion.text = [NSString stringWithFormat:@"MOCA SDK v%@", [MOCA version]];
 }
 
 -(void)onTick:(NSTimer *)timer

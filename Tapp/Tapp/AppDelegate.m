@@ -2,6 +2,8 @@
 //  AppDelegate.m
 //  Tapp Demo Application
 //
+//  Based on MOCA SDK v1.3.9
+//
 //  Copyright (c) 2014 InnoQuant. All rights reserved.
 //
 
@@ -18,19 +20,15 @@
         NSLog(@"MOCA SDK initialization failed.");
         return NO;
     }
-    if (![MOCAProximityService isProximitySupported])
+    MOCAProximityService * proxService = [MOCA proximityService];
+    if (proxService)
+    {
+        // Notify me when beacon-related events are fired.
+        proxService.eventsDelegate = self;
+    }
     {
         NSLog(@"Proximity service is not available on this device, OS %@",
               [[UIDevice currentDevice] systemVersion]);
-    }
-    else
-    {
-        MOCAProximityService * proxService = [MOCA proximityService];
-        if (proxService)
-        {
-            // Notify me when beacon-related events are fired.
-            proxService.eventsDelegate = self;
-        }
     }
     MOCAInstance * theInstance = [MOCA currentInstance];
     if (theInstance)
@@ -44,7 +42,56 @@
           }
         ];
     }
+    _instance = theInstance;
     return YES;
+}
+
+/**
+ * Method triggered when iOS device detects a new beacon.
+ *
+ * @param service proximity service
+ * @param beacon MOCA beacon
+ *
+ * @return void
+ */
+-(void)proximityService:(MOCAProximityService*)service
+          didEnterRange:(MOCABeacon *)beacon
+          withProximity:(CLProximity)proximity
+{
+    NSLog(@"Beacon %@ entered range with proximity %@", beacon.name, [AppDelegate proximityToString:proximity]);
+}
+
+/**
+ * Method triggered when iOS device lost the connection to previously detected beacon.
+ *
+ * @param service proximity service
+ * @param beacon MOCA beacon
+ *
+ * @return void
+ */
+-(void)proximityService:(MOCAProximityService*)service
+           didExitRange:(MOCABeacon *)beacon
+{
+    NSLog(@"Beacon %@ exit range", beacon.name);
+}
+
+
+/**
+ * Method triggered when the state of a beacon proximity did changed.
+ *
+ * @param service proximity service
+ * @param beacon MOCA beacon
+ * @param prevProximity - previous beacon proximity state
+ * @param curProximity - current beacon proximity state
+ *
+ * @return void
+ */
+-(void)proximityService:(MOCAProximityService*)service
+didBeaconProximityChange:(MOCABeacon*)beacon
+          fromProximity:(CLProximity)prevProximity
+            toProximity:(CLProximity)curProximity
+{
+    NSLog(@"Beacon %@ proximity changed from %@ to %@", beacon.name, [AppDelegate proximityToString:prevProximity], [AppDelegate proximityToString:curProximity]);
 }
 
 /**
@@ -97,10 +144,6 @@
 {
 	NSLog(@"APNS token: %@", deviceToken);
     [MOCA registerDeviceToken:deviceToken];
-    [_instance saveWithBlock:^(MOCAInstance *instance, NSError *error)
-    {
-        if (error) NSLog(@"Save APNS token failed: %@", error);
-    }];
 }
 
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
@@ -110,8 +153,14 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
-    [MOCA handleNotification:userInfo applicationState:application.applicationState];
+    [MOCA handleRemoteNotification:userInfo];
 }
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notificaton
+{
+    [MOCA handleLocalNotification:notificaton];
+}
+
 
 /// Applications with the "fetch" background mode may be given opportunities to fetch updated
 // content in the background or when it is convenient for the system. This method will be called
@@ -122,6 +171,23 @@
     (void (^)(UIBackgroundFetchResult result))completionHandler
 {
     [MOCA performFetchWithCompletionHandler:completionHandler];
+}
+
++(NSString*)proximityToString:(CLProximity) p
+{
+    switch(p)
+    {
+        case CLProximityFar:
+            return @"Far";
+        case CLProximityNear:
+            return @"Near";
+        case CLProximityImmediate:
+            return @"Inmediate";
+        case CLProximityUnknown:
+            return @"Unknown";
+        default:
+            return [NSString stringWithFormat:@"Unknown proximity '%d']", (int)p];
+    }
 }
 
 @end

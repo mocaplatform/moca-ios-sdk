@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MOCA/MOCA.h>
+#import "MOCA.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, MOCAProximityEventsDelegate>
 

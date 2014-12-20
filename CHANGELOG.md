@@ -1,3 +1,46 @@
+V1.3.9
+New features:
+- Push Notification Actions (iOS 8)
+- Proximity engine improvements in background
+- Bug fix: restart proximity engine when location services authorization changes at start
+- Bug fix: persistent properties in MOCAUser
+- Inbox API (stub)
+
+V1.3.6
+New features:
+- PoleStar NAO Micro integration
+
+v1.3.2
+New features:
+- User Profile Sensing (Tags, Beacons, Places, Visit History)
+- Tag API
+- Improved analytics
+- Exit beacon trigger fix
+- Support for show embedded html action
+- Full screen overlay popup window
+- Various bug fixes
+- Binary data codecs (efficient binary data serialization support)
+
+v1.3.0
+Features:
+- iOS 8 support
+- Improved geo-location tracking with low battery usage
+- Improved geofencing support
+- Beacon/Zone/Place analytics
+- Geo analytics
+- Passbook actions support
+- FAT library support
+
+v1.2.2
+Features:
+- SDK shutdown
+- Configurable geolocation tracking service
+
+Bug fixes:
+- Custom action parse error fixed
+- Install action delegated bug fixed
+- Proximity client locking issue fixed
+
 ## 1.2 (June 6, 2014)
 
 Features:

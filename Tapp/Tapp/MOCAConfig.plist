@@ -7,7 +7,7 @@
 	<key>APP_SECRET</key>
 	<string>uCOgNbrxuRMx0urJUpAJ1rsLNLk=</string>
 	<key>LOG_LEVEL</key>
-	<string>debug</string>
+	<string>info</string>
 	<key>CACHE_DISK_SIZE_IN_MB</key>
 	<integer>100</integer>
 	<key>AUTOMATIC_PUSH_SETUP_ENABLED</key>

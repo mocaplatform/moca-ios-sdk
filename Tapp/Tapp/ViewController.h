@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelInstanceId;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelAPNSToken;
+@property (weak, nonatomic) IBOutlet UILabel *labelSdkVersion;
 
 - (IBAction) touchAction:(UITapGestureRecognizer *)sender;
 

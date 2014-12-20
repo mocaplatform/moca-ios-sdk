@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0EE55F8C-1DA7-4942-9AAB-09B9E2809755</string>
+	<string>3468B0F4-6E1B-41BE-BE7D-80B62DDA86DB</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Tapp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>46D15A88-3D4B-4E0B-8923-514804B9F884</key>
-		<string>https://github.com/mocaplatform/moca-ios-sdk.git</string>
+		<key>4F36DC6DD3D7E2E7CAEA96C609DD88DCA77FD764</key>
+		<string>https://github.com/innoquant/moca-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tapp/Tapp.xcodeproj/project.xcworkspace</string>
+	<string>Tapp/Tapp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>46D15A88-3D4B-4E0B-8923-514804B9F884</key>
+		<key>4F36DC6DD3D7E2E7CAEA96C609DD88DCA77FD764</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mocaplatform/moca-ios-sdk.git</string>
+	<string>https://github.com/innoquant/moca-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>46D15A88-3D4B-4E0B-8923-514804B9F884</string>
+	<string>4F36DC6DD3D7E2E7CAEA96C609DD88DCA77FD764</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>46D15A88-3D4B-4E0B-8923-514804B9F884</string>
+			<string>4F36DC6DD3D7E2E7CAEA96C609DD88DCA77FD764</string>
 			<key>IDESourceControlWCCName</key>
-			<string>moca-ios-sdk</string>
+			<string>moca-ios</string>
 		</dict>
 	</array>
 </dict>
