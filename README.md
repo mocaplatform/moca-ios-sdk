@@ -116,7 +116,7 @@ You may install the MOCA SDK using CocoaPods or the standard procedure.
 
 1. To install the MOCA SDK, download latest stable version of [MOCA SDK archive](http://files.mocaplatform.com/releases/moca-ios-sdk-latest.zip).
 2. Xcode with the iOS development kit is required to build an iOS app using MOCA SDK. For better experience, we recommend XCode 6.
-3. The SDK requires `iOS 6.x`, `7.x`, `8.0`, 8.1 or later.
+3. The SDK requires `iOS 6.x`, `7.x`, `8.0`, `8.1` or later.
 4. Unzip the archive.
 
 Adding SDK to your app project
@@ -130,12 +130,14 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
       - Drag and drop `MOCAKit.framework` into your app project in XCode.
       - Ensure it is added in `Embedded Binaries` section of General target tab as well as it is listed in `Linked Frameworks and Binaries` section.
       - The framework is a universal FAT binary compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
-   - To support iOS 6 and 7 apps, use static library `libMOCALib.a` provided in the bundle. The library is a universal FAT library compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`
+   - To support iOS 6 and 7 apps, use static library `libMOCALib.a` provided in the bundle. The library is a universal FAT library compiled for the following architectures: `armv7/armv7s/arm64/x86_64/i386`. Do not use the `MOCAKit.framework`.
 
 3. Make sure Copy items into destination group's folder is selected.
 4. Press the Finish button.
 5. Ensure that you have added to your project the following dependent frameworks:
    - `SystemConfiguration.framework`
+   - `CoreTelephony.framework`
+   - `MobileCoreServices.framework`
    - `CoreBluetooth.framework`
    - `CoreLocation.framework`
    - `UIKit.framework`
@@ -145,7 +147,7 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
 
    To do this, select your project file in the file explorer, select your target, and select the Build Phases sub-tab. Under Link Binary with Libraries, press the <i>+ button</i>, to select and add all required frameworks.
 
-6. For iOS 8, ensure the `NSLocationAlwaysUsageDescription property is added to your plist. For example:
+6. For iOS 8, ensure the `NSLocationAlwaysUsageDescription property is added to your `info.plist`. For example:
 
    ````
    NSLocationAlwaysUsageDescription=This app will use your location information to identify \
@@ -158,7 +160,7 @@ Once downloaded the SDK, you’ll need to add all necessary frameworks to your p
    - Remote notifications
    - Uses Bluetooth LE accessories (optional)
 
-8. Optinally, enable Passbook entitlement and link PassKit.framework to use Passbook experiences in your app.
+8. Optionally, enable Passbook entitlement and link `PassKit.framework` to use Passbook experiences in your app.
 
 
 Setting up the SDK
@@ -180,7 +182,7 @@ Configuring the SDK
 Now, you’ll need to prepare SDK configuration file:
 
 5. Go back to your Xcode project.
-6. Add <i>New file / Property List</i> resource to your project. Save it as *MOCAConfig.plist* file.
+6. Add <i>New file / Property List</i> resource to your project. Save it as *MOCAConfig.plist* file. (optional,  [download sample MOCAConfig.plist file](/MOCA-SDK/MOCAConfig.plist))
 7. Add configuration settings as shown below:
 	- APP_KEY  (String) - app key
 	- APP_SECRET (String) - app secret
@@ -189,7 +191,6 @@ Now, you’ll need to prepare SDK configuration file:
 	- AUTOMATIC_PUSH_SETUP_ENABLED - if 'YES', the SDK will automatically subscribe the app to Apple push notification service.
 	- PROXIMITY_SERVICE_ENABLED - if 'YES', the SDK will track beacons and run proximity campagins downloaded from the cloud.
 8. Be sure to replace `APP_KEY` and `APP_SECRET` values with the real values for your app which you found in the MOCA console.
-9. You may also download [sample MOCAConfig.plist file](/MOCA-SDK/MOCAConfig.plist).
 
 ![MOCA Management Console / API Keys view](/Assets/images/moca-config-plist.png)
 
