@@ -1,10 +1,93 @@
-## V1.3.9 (December 2014)
+## V1.6.3 (May 2015)
+
+v1.6.3
+- Critical bug fix for iOS 8.3. AutoLayout constrain violation: "A multiplier of 0 or a nil second item together with a location for the first attribute creates
+  an illegal constraint of a location equal to a constant. Location attributes must be specified in pairs".
+  This bug affects all apps with MOCA SDK 1.6.3 running on iOS 8.3.
+- Bug fix: persist experience fired at timestamp after app kill / restart to guarantee consistent repeat frequency.
+
+v1.6.2
+- Updated API in MOCAProximityActionsDelegate. Enables custom delegate to get access to MOCAAction class and underlying action details such as background alert text. Previous methods deprecated (but still working).
+
+v1.6.1
+- Improved beacon ranging in background. The SDK uses now maximum available time doing ranging (up to 190 seconds) after being woken up in background.
+
+v1.6.0
+- Major refactoring of MOCA iBeacons driver to improve detection of beacon enter/exit region events when the app has been killed.
+  In some situations when the app has been killed by the user or OS, the detection of beacons may take up to several minutes
+  after the user turn the screen on or unlocks the phone.
+
+v.1.5.3
+- MOCA JavaScript API for HTML creativities: html content delivered by MOCA may now access instance/user properties from within SDK.
+  UIWebView uses JavaScript-to-Objective-C bridge to communicate both environments.
+
+v.1.5.2
+- Bug fix: auto register for push notifications called even if disabled
+- Bug fix: register for location services not always called in iOS 7
+- Analytics: track actions fired in foreground/background.
+
+v1.5.1
+- NaoMicro driver was refactored out of SDK and is now available as an add-in.
+- Optional AdSupport framework integration (SDK detects automatically if the App supports Ads).
+- Bug fix: session tracking improved
+
+v1.5.0.
+- New JavaScript API for MOCA WebView Overlay
+- Crash fix in ProximityManager when server request fails.
+
+v1.4.9
+-Update NaoMicro SDK
+
+v1.4.8
+-Update NaoMicro SDK
+
+v1.4.7
+-Fix: dispatch NaoMicro beacon events when delivered in background thread to UI thread
+
+v1.4.6
+-Fix: delay in opening custom URL
+
+v1.4.5
+- Fix: logout
+
+v1.4.4
+- Improved iBeacon error debuging (eg. notify reason for beacon monitoring failure)
+- Fix: set string array value for custom property
+- Fix: rename remaining AFNetworking symbols in 386/x86_64 archs
+- Improvement: smarter bluetooth on/off, airplane mode on/off handling
+
+v1.4.3.1
+- PoleStar NaoMicro SDK integration v12022015, bugfix
+
+v1.4.3
+- PoleStar NaoMicro SDK integration v11022015, support for i386/x86_64
+- Get top view fix for interactive UI views (toast, webview)
+- Default delay between subsequent actions set to 15 seconds
+- Removed heart beat events
+- New API for MOCAProximityService segments
+- New API callback MOCAProximityActionDelegate: -(BOOL)canDisplayProximityActionNow:(MOCAProximityService*)service;
+
+=======
+V.1.4.2
+- FMDB symbols renamed to avoid conflict within hosting app that also use FMDB
+
+V1.4.1
+- Latest NeoMicro Driver (6/02/2014)
+- Varios bug fixes
+- Visit tracking enabled
+- Hearbeat events disabled
+
+v1.4.0
+- Full NaoMicro SDK integration (Exit Alert support)
+- Segmentation engine
+- Remove Monitored Region from NaoMicro SDK bug fix
+
+v1.3.9
 New features:
-- Push Notification Actions (iOS 8)
+- Push Notification Actions
 - Proximity engine improvements in background
 - Bug fix: restart proximity engine when location services authorization changes at start
 - Bug fix: persistent properties in MOCAUser
-- Inbox API (stub)
 
 V1.3.6
 New features:
