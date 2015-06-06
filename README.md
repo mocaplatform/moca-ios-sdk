@@ -6,7 +6,7 @@ What is MOCA SDK?
 
 The MOCA SDK for iOS lets you turn you mobile app into a powerful marketing tool.
 Effortlessly add iBeacon and geolocation driven proximity experiences to your iOS app, engage your users and understand them with MOCA analytics.
-The SDK enables you to quickly connect to [MOCA backend platform](http://mocaplatform.com), deploy beacon experiences from the cloud, and track your users.
+The SDK enables you to quickly connect to [MOCA backend platform](http://mocaplatform.com), deploy beacon campaigns from the cloud, and enrich user experience with location and proximity context. 
 
 The MOCA iOS SDK is a drop-in, native library that provides a simple way to integrate MOCA platform services into your iOS applications. This SDK is provided as a ZIP archive and contains pre-compiled universal libraries for `armv7/armv7s/arm64/i386/x86_64` architectures and can be used with iOS 6, 7 and 8.
 
@@ -16,9 +16,7 @@ The MOCA iOS SDK is a drop-in, native library that provides a simple way to inte
 Who is MOCA SDK for?
 --------------------
 
-The MOCA SDK is targeted to iOS app developers willing to add iBeacon-awareness, geofence-tracking and analytics to their apps and deploy
-proximity experiences from the MOCA cloud. It is also targeted to developers that need to track behavioral data from their apps 
-in order to better understand the mobile users. 
+The MOCA SDK is targeted to iOS app developers willing to add iBeacon-awareness, geofence-tracking and analytics to their apps and deploy proximity experiences from the MOCA cloud. It is also targeted to developers that need to learn behavioral data from their apps in order to better understand the mobile users. 
 
 
 Key Features
@@ -31,7 +29,7 @@ The MOCA SDK brings the following key features to your app:
 - Manage your fleet of beacons in your cloud account.
 - Automatically detect beacon sensors declared in your cloud account. 
 - Automatically fetch and deploy proximity experiences from the cloud ("Proximity Campaigns")
-- Enrich user experience by delivering proximity actions when proximity triggers conditions are fired
+- Enrich user experience by delivering actions and when location and proximity trigger conditions are met
 - Supported triggers: 
   - Proximity triggers:
      - Enter place
@@ -45,10 +43,11 @@ The MOCA SDK brings the following key features to your app:
      - Enter place
      - Exit place
 - Supported actions:
-  - Display push notification message
+  - Display local push notification message
   - Play video from URL
   - Show image from URL
   - Show HTML content from URL
+  - Show full screen HTML creativity offline
   - Play sound
   - Show PassBook card
   - Custom action (app provided delegate callback)
@@ -60,6 +59,7 @@ The MOCA SDK brings the following key features to your app:
 - Track and store any custom, in-app events from your app
 - Store all tracked events locally, and transmit them to the cloud when Internet connectivity (Edge, 3G, 4G, Wifi) is available. 
 - Send all data to the Big Data platform for further processing and analysis.
+- Protect user privacy and enforce legal data protection policies 
 
 
 <h3>Push Notifications</h3>
@@ -67,6 +67,7 @@ The MOCA SDK brings the following key features to your app:
 - The MOCA SDK lets you easily subscribe and use Apple Push Notification Service (APNS) in your app. 
 Enable the automatic push service setup, and SDK will register push token in the cloud allowing you
 to communicate with your mobile app users.
+- Deliver push notifications only when specific conditons are met (real-time, context-aware segmentation)
 - Track push notifications and analyze their effectiveness in the cloud.
 
 
